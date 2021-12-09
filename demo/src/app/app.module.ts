@@ -3,15 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MatchComponent } from './match/match.component';
+import {AdnSingleEliminationTreeModule} from "@adonsio/adn-tournament";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MatchComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        AdnSingleEliminationTreeModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
